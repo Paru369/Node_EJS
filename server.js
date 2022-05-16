@@ -7,37 +7,42 @@ app.get("/", function(req, res){
   const items = [
     {
       title: "D",
-      message: "Desenvolver Aplicações/servicos mais facil"
+      message: "esenvolver Aplicações/servicos mais facil"
     },
     {
       title: "E",
-      message: "EJS usa javaScritp para renderizar HTML"
+      message: "JS usa javaScritp para renderizar HTML"
     },
     {
       title: "M",
-      message: "Muito tranquilo de usar em seu site"
+      message: "uito tranquilo de usar em seu site"
     },
     {
       title: "A",
-      message: "Atualizações mais simples por componetização"
+      message: "tualizações mais simples por componetização"
     },
     {
-      title: "i",
-      message: "Incrivelmente simples de implemantar novas páginas"
+      title: "I",
+      message: "ncrivelmente simples de implemantar novas páginas"
     },
     {
       title: "S",
-      message: "Sintaxe simples"
+      message: "intaxe simples"
     }
   ];
+
+const subtitle = "Uma liguagem de modelagem para criação de página html com JS"
+
+
   res.render("pages/index", {
     qualitys:items,
-  })
-})
+    subtitle: subtitle
+  });
+});
 
 app.get("/sobre", function(req, res){
   res.render("pages/about")
 })
 
 app.listen(8080);
-console.log("Servidro Funcionando")
+console.log("Servidor Funcionando")
