@@ -14,6 +14,17 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias deleniti hic deserunt numquam saepe nihil ea! Tempore numquam eos delectus aspernatur facilis nostrum, sed, ipsam tempora atque magnam reiciendis!</p>
       </div>
+
+      <ul> 
+        <% qualitys.forEach(function(quality){ %>
+
+        <li>
+          <strong><%= quality.title %></strong> <%= quality.message %>
+        </li>
+
+        <% })%>
+     
+      </ul>
     </main>
     <%- include('../partials/footer'); %>
   </body>
